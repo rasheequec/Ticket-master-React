@@ -9,6 +9,8 @@ class Search extends React.Component{
        this.searchHandle = this.searchHandle.bind(this)
    }
 
+ 
+
    searchHandle(e){
        this.setState({
            [e.target.name]: e.target.value  
@@ -22,7 +24,7 @@ class Search extends React.Component{
        return(
            <div>
                <label>Search:</label>
-               <input type = "text"name = "searchdata" placeholder = "search" onBlur = {this.searchHandle}/>
+               <input type = "text"name = "searchdata" placeholder = "search" onChange = {this.searchHandle}/>
            </div>
        )
    }

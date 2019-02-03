@@ -20,8 +20,8 @@ class Table extends React.Component{
                         </tr>
                    </thead>
                    <tbody>
-                       {this.props.data.map(function(dat){
-                           return <TableData data = {dat} key = {dat.id} code = {dat.ticket_code} name = {dat.name} department = {dat.department} priority = {dat.priority} message = {dat.message} status = {dat.status}/>
+                       {this.props.data.map((dat)=>{
+                           return <TableData progress = {this.props.progress} data = {dat} key = {dat.id} code = {dat.ticket_code} name = {dat.name} department = {dat.department} priority = {dat.priority} message = {dat.message} status = {dat.status}/>
 
 
                        })}
