@@ -5,6 +5,8 @@ import Table from './table'
 import TicketForm from './form'
 import Search from './search'
 import ProgressBar from'./Graphs/progress-bar'
+import Piechart from './Graphs/pie-chart'
+import Barchart from './Graphs/bar-chart';
 
 
 
@@ -104,7 +106,9 @@ this.setState({
         <button onClick = {this.lowHandle}>Low</button>
         <Table data = {this.state.tabledata} progress = {this.progressHandle}/>
         <ProgressBar data = {this.state.tabledata}/>
+        <Piechart data = {this.state.tabledata}/>
         <TicketForm data = {this.formUpdate}/>
+        <Barchart data = {this.state.tabledata}/>
      </div>
     );
   }
